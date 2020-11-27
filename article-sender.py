@@ -47,9 +47,9 @@ browser = webdriver.Chrome(options=options)
 base_url = "https://pushtokindle.fivefilters.org/send.php?src=safari-app&url="
 browser.get(base_url + "https://google.com")
 time.sleep(2)
-browser.find_element_by_xpath(r'//*[@id="contentIdForA11y3"]/div/div[4]/div/input').send_keys("khoikindle@kindle.com")
+browser.find_element_by_xpath(r'//*[@id="contentIdForA11y3"]/div/div[4]/div/input').send_keys("<receiving email>")
 time.sleep(2)
-browser.find_element_by_xpath(r'//*[@id="contentIdForA11y3"]/div/div[5]/div/input').send_keys("43.dpham@gmail.com")
+browser.find_element_by_xpath(r'//*[@id="contentIdForA11y3"]/div/div[5]/div/input').send_keys("<sending email>")
 
 for url in rl_urls:
     if url not in kindle_urls:
